@@ -1,0 +1,26 @@
+.circle{
+    background-color: magenta;
+    width: 200px;
+    height: 200px;
+    transition: background-color 1s 1s;
+}
+.circle:hover{
+    background-color: aqua;
+    border-radius: 50%;
+}
+
+/* Transitions in CSS
+Property name Duration Timing Function Delay */
+
+section div{
+    height: 100px;
+    width: 100px;
+    background-color: turquoise;
+    margin: 20px 0;
+    transition: margin-left 3s;
+    transition: margin-bottom 1s ease-out;
+}
+section:hover div{
+    /* margin-left: 500px; */
+    margin-bottom: 100px;
+}
