@@ -1,0 +1,26 @@
+img{
+    width: 30%;
+    margin: calc(10%/6);
+}
+
+nav{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    border-bottom: 2px solid #2e3949;
+    width: 30%;
+    margin-left: calc(10%/6);
+    padding: 20px 0;
+    letter-spacing: 2px;
+    font-size: large;
+}
+nav:hover{
+    color:aquamarine;
+    transform: translateX(-5px);
+    transform: skew(5deg);
+}
+nav::before{
+    content: "<";
+}
+nav::after{
+    content: "/>";
+}
