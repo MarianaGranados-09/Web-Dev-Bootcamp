@@ -1,0 +1,45 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+#container{
+    background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049;
+    /*Flexbox Properties: */
+    display: flex;
+    
+    /* flex-direction: column; */
+    flex-direction: row;
+
+    /* Justify Content: how the content is distributed across the main axis */
+    justify-content: flex-start;
+    /* justify-content: flex-end; */
+    /* justify-content: space-around;
+    justify-content: space-evenly; */
+
+    /* Flex Wrap property determines whether our elements are going to wrap along the main axis onto a new line if its horizontal or a new column if its a vertical main axis*/
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: center;
+
+    /* align-content only works when flex-wrap is activated */
+
+    /* Flex-Basis: Defines the initial size of an element before additional space is distributed */
+
+    /* Flex-Grow: Controls the amount of available space an element should take up. Accepts a unit-less number value */
+
+    /* Flex-Shrink: Of items are larger than the container, they shrink according to flex-shrink. */
+
+
+}
+#container div{
+    width: 200px;
+    height: 200px;
+}
