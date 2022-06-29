@@ -74,6 +74,25 @@ body{
     text-align: center;
     text-transform: uppercase;
 }
+
+@media (min-width: 900px){
+    .main{
+        flex-direction: row;
+    }
+    .list-items{
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+}
+.image:hover{
+    transform: translateY(-0.25rem);
+}
+.pricing-header:hover{
+    color:darkgoldenrod;
+}
+
+
 .section{
     border-bottom: 1px solid #e1f1ff;
 }
@@ -84,12 +103,14 @@ body{
     margin-bottom: 25px;
     max-width: 100%;
     padding-top: 35px;
+    transition: all 200ms;
 }
 .pricing-header{
     color: #888;
     letter-spacing: 2px;
     font-weight: 600;
     opacity: 85%;
+    transition: all 1s;
 }
 .features{
     margin: 50px 0 25px;
