@@ -1,0 +1,39 @@
+h1{
+    font-size: 2em;
+}
+@media (max-width: 1000px){
+    h1{
+        color: red;
+        /* font-size: 0.5em; */
+    }
+}
+
+@media (min-width: 500px)
+{
+    h1{
+        color: whitesmoke;
+    }
+}
+
+@media (orientation: landscape){
+    body{
+        background-color: cadetblue;
+    }
+}
+
+ul, li{
+    list-style: none;
+    display: inline;
+    margin: 0;
+    padding: 0.5rem;
+}
+ul{
+    border: 1px solid saddlebrown;
+}
+
+nav{
+    display: flex;
+    font-size: 1.5em;
+    justify-content: center;
+}
+
