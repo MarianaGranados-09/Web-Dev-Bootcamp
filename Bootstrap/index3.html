@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid</title>
+</head>
+<body>
+    <!-- Bootstrap Grid System
+    Helps us construct our own custom responsive layouts -->
+    <div class="container">
+        <h1 class="display-1 text-center text-primary">The Grid System</h1>
+        <!-- Every row in bootstrap has 12 units of space, also, it is necessary to create columns in our row -->
+        <div class="row">
+            <!-- 50% -->
+            <div class="col-4 bg-success">I am 6 units</div>
+            <div class="col-8 bg-info">I am 6 units</div>
+        </div>
+        <div class="row">
+            <div class="col-3 bg-success">I am 3 units</div>
+            <div class="col-6 bg-danger">I am 6 units</div>
+            <div class="col-3 bg-success">I am 3 units</div>
+        </div>
+
+        <div class="row">
+            <div class="col bg-primary">I am auto sized</div>
+            <div class="col bg-info">I am auto sized</div>
+        </div>
+        <h2 class="display-4 text-center text-info">Responsive Grid System</h2>
+        <div class="row">
+            <!-- adding md makes our columns responsive.
+            with col-xl-3 we set our columns to be smaller from the start: col-xl-n means the columns take up a maximum of n units altogether -->
+            <div class="col-md-6 col-xl-5 bg-info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis consequatur commodi totam nisi voluptatem quidem mollitia aliquid quasi, nulla quo a ea magni iure soluta dolore officia voluptate magnam. Suscipit!</div>
+            <div class="col-md-6 col-xl-5  bg-danger">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est ipsam odit accusamus officiis enim deserunt cum molestias reiciendis eveniet odio perspiciatis illum quo assumenda, adipisci inventore veritatis laborum id officia?</div>
+        </div>
+        <!-- Using alignment from flexbox (flexbox helpers): -->
+
+        <h2 class="display-5 text-center text-danger">Grid alignment</h2>
+        <div class="row align-items-start">  <!-- -end, -start, -center-->
+            <div class="col-3 bg-danger">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum placeat, voluptates dicta modi impedit possimus dolorem quibusdam dignissimos expedita, voluptas eligendi, autem pariatur aspernatur repellendus! Veritatis quasi in amet? Odio.
+            </div>
+
+            <div class="col-3 bg-warning">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, deleniti ad, placeat quos esse voluptate maiores pariatur voluptatibus molestiae rerum animi modi cupiditate nisi saepe ducimus nostrum! Vel, harum debitis!
+            </div>
+            <div class="col-3 bg-success">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, earum. Labore porro fugit nam velit ad, maiores eum ut, possimus animi quia quam illum! Maxime earum eligendi odio aliquid odit?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus fugit, ullam pariatur obcaecati enim iste voluptatem iusto. Quae nemo magni iure ducimus nostrum. Consequuntur, labore ipsum. Magnam harum amet rem!
+            </div>
+
+            <div class="col-3 bg-info align-self-end">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, a qui nemo voluptate voluptatibus reiciendis odio aliquam perferendis aliquid sunt illum maiores eum alias vel dignissimos quia voluptates debitis nam.
+            </div>
+        </div>
+
+        <h3>Justify content</h3>
+        <div class="row border justify-content-center">
+            <div class="col-4 bg-primary">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eius nesciunt illo enim tenetur, labore molestiae nobis aspernatur esse deleniti fugiat suscipit asperiores voluptate magnam cum ut dicta temporibus accusantium.
+            </div>
+            <div class="col-4 bg-info">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor eius nesciunt illo enim tenetur, labore molestiae nobis aspernatur esse deleniti fugiat suscipit asperiores voluptate magnam cum ut dicta temporibus accusantium.
+            </div>
+        </div>
+
+        <!-- We use no gutters to eliminate the space between the images -->
+        <div class="row no-gutters">
+            <!-- To make our images responsive, we use col-xl-4, this means they will stack on top of each other when the window width gets narrower -->
+            <div class="col-xl-4">
+                <img src="https://images.unsplash.com/photo-1591608971362-f08b2a75731a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmlyZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60
+                " alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-4">
+                <img src="https://images.unsplash.com/photo-1549608276-5786777e6587?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8YmlyZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60
+                " alt="" class="img-fluid">
+            </div>
+            <div class="col-xl-4">
+                <img src="https://images.unsplash.com/photo-1480044965905-02098d419e96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8YmlyZHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60
+                " alt="" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
