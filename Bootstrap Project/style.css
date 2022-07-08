@@ -22,4 +22,18 @@ body{
     font-weight: 600;
     font-size: 1.5rem;
 }
+#headingGroup span{
+    color: #45503B;
+}
+#headingGroup h2{
+    font-weight: 100;
+    font-size: 3rems;
+}
+
+@media (max-width: 1200px){
+    #headingGroup h2{
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
 
