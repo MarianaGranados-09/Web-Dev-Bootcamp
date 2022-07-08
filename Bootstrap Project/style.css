@@ -37,3 +37,28 @@ body{
     }
 }
 
+#svg{
+    color: white;
+}
+
+#titleh2{
+    color: #45503B;
+    font-weight: 100;
+    font-size: 2.5rem;
+}
+
+.blurb p{
+    line-height: 2;
+    font-size: 1.125rem;
+    font-weight: 100;
+    color: #B098A4;
+}
+.content{
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.navbar.scrolled{
+    background-color: #45503B;
+    transition: background 1s ease-in;
+}
