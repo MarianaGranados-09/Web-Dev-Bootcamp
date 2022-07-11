@@ -8,3 +8,11 @@ Topics covered so far:
 -CSS
 
 -Bootstrap
+
+-Javascript
+
+  *Strings (string methods) and conditional statements
+  
+  *Arrays
+  
+  *Object Literals
