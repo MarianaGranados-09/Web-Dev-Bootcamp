@@ -11,8 +11,8 @@ Topics covered so far:
 
 -Javascript
 
-  *Strings (string methods) and conditional statements
+     *Strings (string methods) and conditional statements
   
-  *Arrays
+     *Arrays
   
-  *Object Literals
+     *Object Literals
