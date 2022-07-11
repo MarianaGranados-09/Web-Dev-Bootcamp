@@ -1,6 +1,6 @@
 // JS objects are going to help store multiple pieces of data together in some sort of structure.
 
-//Objects are collections of properties, propertires are a key-value pair.
+//Objects are collections of properties, properties are a key-value pair.
 
 //Rather than accessing data using an index, we use custom keys.
 
