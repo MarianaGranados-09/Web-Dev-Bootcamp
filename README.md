@@ -16,3 +16,11 @@ Topics covered so far:
      *Arrays
   
      *Object Literals
+     
+     *'This' keyword
+     
+     *Try/Catch
+     
+     *Filter, Reduce, MAP methods
+     
+     *Destructuring, Spread and Default params
