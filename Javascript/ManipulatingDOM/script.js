@@ -40,3 +40,22 @@ for(let link of allLinks){
 window.getComputedStyle(h1);
 window.getComputedStyle(h1).color; 
 window.getComputedStyle(h1).fontSize;
+
+const cont = document.querySelector('#container');
+cont.style.textAlign = 'center';
+
+const img = document.querySelector('img');
+img.style.width = '150px'
+img.style.borderRadius = '50%';
+
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']; //PLEASE DON'T CHANGE THIS LINE!
+
+//YOU CODE GOES HERE:
+const spans = document.querySelectorAll('span');
+let count = 0;
+for(let span of spans){
+    span.style.color = colors[count];
+    count++;
+}
+
+
