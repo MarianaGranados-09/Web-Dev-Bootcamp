@@ -58,4 +58,23 @@ for(let span of spans){
     count++;
 }
 
+const h2 = document.querySelector('h2');
+h2.getAttribute('class');
+h2.setAttribute("class", 'purple');
+h2.setAttribute('class', 'border');
+
+let currentClasses = h2.getAttribute('class');
+h2.setAttribute('class',`${currentClasses} purple`);
+
+//Using classList to add new classes to an element
+//Add a new class:
+h2.classList.add('purple');
+h2.classList.add('border');
+//Remove a class:
+h2.classList.remove('border');
+
+//Check whether a class exists or not: (returns true or false)
+h2.classList.contains('border'); //false
+h2.classList.toggle('purple');
+
 
