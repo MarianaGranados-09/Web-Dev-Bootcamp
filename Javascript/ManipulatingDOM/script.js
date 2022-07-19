@@ -95,10 +95,49 @@ firstBold.parentElement //gives the element paragraph
 firstBold.parentElement.parentElement // //gives the element body
 
 const paragraph = firstBold.parentElement;
-paragraph.childElementCount // tells us how many child elements there are
+paragraph.childElementCount; // tells us how many child elements there are
 //[b, b, a, a] //gives us an html collection that is iterable
-firstBold.nextElementSibling //return next sibling element
-firstBold.previousElementSibling
+firstBold.nextElementSibling; //return next sibling element
+firstBold.previousElementSibling;
+
+//Create a new element
+const newImg = document.createElement('img');
+
+//Accessing object properties:
+console.dir(newImg);
+//Add a source for the image 
+newImg.src = 'https://images.pexels.com/photos/3813324/pexels-photo-3813324.jpeg?auto=compress&cs=tinysrgb&w=600';
+
+//How to add the image to the page? 
+//to the body of the page:
+document.body.appendChild(newImg);
+
+const H3 = document.createElement('h3');
+H3.innerText = 'HELLO!';
+document.body.appendChild(H3)
+
+//Add element to page using append only allows us to add multiple elements created
+const p = document.querySelector('p');
+p.append('i am new text!');
+
+//Or we can use prepend to add an element to the beginning of a section
+p.prepend('i am first');
+
+//Or we can use insertAdjacentElement(position, element)
+//position: beforebegin, afterbegin, beforeend, afterend
+const htwo = document.createElement('h2');
+htwo.innerText = 'HEL';
+p.insertAdjacentElement('afterend', htwo);
+
+//removing elements
+//removing first element from a list by getting its parent element which a ul
+const firstLi = document.querySelector('li');
+const ul = firstLi.parentElement;
+ul.removeChild(firstLi);
+
+const imgg = document.querySelector('img');
+img.remove();
+
 
 
 
