@@ -77,4 +77,29 @@ h2.classList.remove('border');
 h2.classList.contains('border'); //false
 h2.classList.toggle('purple');
 
+li.classList.toggle('highlight');
+
+// WRITE YOUR CODE IN HERE:
+const lis = document.querySelectorAll('li');
+for(let li of lis){
+    li.classList.toggle('highlight');
+}
+/*
+lis.forEach(li => {
+    li.classList.toggle('highlight');
+})*/
+
+const firstBold = document.querySelector('b');
+//firstBold =   <b>Silkie</b>
+firstBold.parentElement //gives the element paragraph
+firstBold.parentElement.parentElement // //gives the element body
+
+const paragraph = firstBold.parentElement;
+paragraph.childElementCount // tells us how many child elements there are
+//[b, b, a, a] //gives us an html collection that is iterable
+firstBold.nextElementSibling //return next sibling element
+firstBold.previousElementSibling
+
+
+
 
