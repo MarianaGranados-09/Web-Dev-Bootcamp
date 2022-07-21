@@ -24,3 +24,7 @@ Topics covered so far:
      *Filter, Reduce, MAP methods
      
      *Destructuring, Spread and Default params
+     
+     *Manipulating DOM (querySelector, Attributes, classList, append, remove)
+     
+     *DOM Events (inline events, onclick propery, addEventListener)
