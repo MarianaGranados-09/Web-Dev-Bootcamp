@@ -9,6 +9,7 @@ let isGameOver  = false;
 
 max.addEventListener('change', () => {
     maxScore = max.value;
+    reset();
     //alert(maxScore);
 })
 
@@ -56,6 +57,12 @@ btn2.addEventListener('click', (e) => {
 
 rst.addEventListener('click', (e) => {
     //Reset count
+    reset();
+    
+})
+
+function reset()
+{
     score1 = 0;
     score2 = 0;
     sc1.innerText = score1;
@@ -65,5 +72,4 @@ rst.addEventListener('click', (e) => {
 
     p2.classList.remove('winner');
     p2.classList.remove('loser');
-    
-})
+}
