@@ -4,11 +4,12 @@ const max = document.querySelector('select');
 
 let score1 = 0;
 let score2 = 0;
+let maxScore = 0;
+let isGameOver  = false;
 
 max.addEventListener('change', () => {
-    let maxScore = max.value;
-    //console.log('')
-    alert('Change!');
+    maxScore = max.value;
+    //alert(maxScore);
 })
 
 
@@ -23,19 +24,21 @@ const rst = document.querySelector('#rst');
 const score = document.querySelector('#score');
 
 btn1.addEventListener('click', (e) => {
-    if(score1 !== maxScore){
+    if(score1 < maxScore){
         score1++;
         //console.log(score1);
         sc1.innerText = score1;
     }
+    isGameOver = true;
 })
 
 btn2.addEventListener('click', (e) => {
-    if(score2 !== maxScore){
+    if(score2 < maxScore){
         score2++;
         console.log(score2);
         sc2.innerText = score2;
     }
+    isGameOver = true;
 })
 
 rst.addEventListener('click', (e) => {
