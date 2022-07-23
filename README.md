@@ -28,3 +28,5 @@ Topics covered so far:
      *Manipulating DOM (querySelector, Attributes, classList, append, remove)
      
      *DOM Events (inline events, onclick propery, addEventListener)
+     
+     *Input, Forms, and Change Events.
