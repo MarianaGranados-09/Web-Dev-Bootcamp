@@ -16,6 +16,9 @@ max.addEventListener('change', () => {
 const sc1 = document.querySelector('#score1');
 const sc2 = document.querySelector('#score2');
 
+const p1 = document.querySelector('.p1');
+const p2 = document.querySelector('.p2');
+
 
 const btn1 = document.querySelector('#btn1');
 const btn2 = document.querySelector('#btn2');
@@ -25,20 +28,30 @@ const score = document.querySelector('#score');
 
 btn1.addEventListener('click', (e) => {
     if(score1 < maxScore){
+        if(score1 === maxScore-1)
+        {
+            console.log('Player 1 wins');
+            p1.classList.add('winner');
+            p2.classList.add('loser');
+        }
         score1++;
-        //console.log(score1);
         sc1.innerText = score1;
     }
-    isGameOver = true;
+    
 })
 
 btn2.addEventListener('click', (e) => {
     if(score2 < maxScore){
+        if(score2 === maxScore-1)
+        {
+            console.log('Player 2 wins');
+            p2.classList.add('winner');
+            p1.classList.add('loser');
+        }
         score2++;
-        console.log(score2);
         sc2.innerText = score2;
     }
-    isGameOver = true;
+    
 })
 
 rst.addEventListener('click', (e) => {
@@ -47,5 +60,10 @@ rst.addEventListener('click', (e) => {
     score2 = 0;
     sc1.innerText = score1;
     sc2.innerText = score2;
+    p1.classList.remove('winner');
+    p1.classList.remove('loser');
+
+    p2.classList.remove('winner');
+    p2.classList.remove('loser');
     
 })
