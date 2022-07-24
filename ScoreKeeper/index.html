@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        .winner{
-            color: green;
-        }
-        .loser{
-            color: red;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <title>ScoreKeeper</title>
 </head>
 <body>
-    <h3>Ping Pong Score Keeper</h3>
-    <h1><span class="p1" id="score1">0</span> to <span class="p2" id="score2">0</span></h1>
-    <h4>Playing to </h4> <!--Dropdown menu -->
-    <select name="" id="playto">
-        <option value="3">3</option>
-        <option value="5">5</option>
-        <option value="7">7</option>
-        <option value="10">10</option>
-    </select>
-    <p>Use the buttons below to keep score.</p>
-    
-
-    <button id="btn1">+1 Player One</button>
-    <button id="btn2">+1 Player Two</button>
-    <button id="rst">Reset</button>
+    <div class="container">
+        <div class="columns">
+            <!-- Halfway class with bulma: -->
+            <!-- Offset classes:  -->
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-4by3">
+                        <img src="https://images.pexels.com/photos/3771083/pexels-photo-3771083.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        <div class="media-content">
+                          <p class="title is-6 winner">Ping Pong Score Keeper</p>
+                        </div>
+                      </div>
+                  
+                      <div class="content">
+                        <p class="title is-3"><span class="p1" id="score1">0</span> to <span class="p2" id="score2">0</span></p>
+                        <h5 class="is-inline-block">Playing to</h5> <!--Dropdown menu -->
+                        <div class="select is-rounded is-danger is-small">
+                            <select id="playto">
+                            <option value="3">3</option>
+                            <option value="5">5</option>
+                            <option value="7">7</option>
+                            <option value="10">10</option>
+                        </select>
+                        </div>
+                        <p>Use the buttons below to keep score.</p>   
+                        </div>
+                        <div class="card-footer">
+                            <button id="btn1" class="button is-success card-footer-item">+1 Player One</button>
+                            <button class="button is-info card-footer-item" id="btn2">+1 Player Two</button>
+                            <button class="button is-danger card-footer-item" id="rst">Reset</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
