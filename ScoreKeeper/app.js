@@ -25,15 +25,20 @@ const btn1 = document.querySelector('#btn1');
 const btn2 = document.querySelector('#btn2');
 const rst = document.querySelector('#rst');
 
+const ch = document.querySelector('.winner');
+
 const score = document.querySelector('#score');
 
 btn1.addEventListener('click', (e) => {
     if(score1 < maxScore){
         if(score1 === maxScore-1)
         {
-            console.log('Player 1 wins');
-            p1.classList.add('winner');
-            p2.classList.add('loser');
+            //console.log('Player 1 wins');
+            p1.classList.add('has-text-success');
+            p2.classList.add('has-text-danger');
+            ch.innerText = 'Player 1 WINS!';
+            ch.classList.add('has-text-success');
+
         }
         score1++;
         sc1.innerText = score1;
@@ -45,9 +50,11 @@ btn2.addEventListener('click', (e) => {
     if(score2 < maxScore){
         if(score2 === maxScore-1)
         {
-            console.log('Player 2 wins');
-            p2.classList.add('winner');
-            p1.classList.add('loser');
+            //console.log('Player 2 wins');
+            p2.classList.add('has-text-success');
+            p1.classList.add('has-text-danger');
+            ch.innerText = 'Player 2 WINS!';
+            ch.classList.add('has-text-info');
         }
         score2++;
         sc2.innerText = score2;
@@ -65,11 +72,15 @@ function reset()
 {
     score1 = 0;
     score2 = 0;
+    ch.innerText = "Ping Pong Score Keeper";
     sc1.innerText = score1;
     sc2.innerText = score2;
-    p1.classList.remove('winner');
-    p1.classList.remove('loser');
+    p1.classList.remove('has-text-success');
+    p1.classList.remove('has-text-danger');
 
-    p2.classList.remove('winner');
-    p2.classList.remove('loser');
+    p2.classList.remove('has-text-success');
+    p2.classList.remove('has-text-danger');
+
+    ch.classList.remove('has-text-success');
+    ch.classList.remove('has-text-info');
 }
