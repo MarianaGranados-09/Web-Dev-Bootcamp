@@ -26,3 +26,14 @@ setTimeout( () => {
     console.log('Here is your data from the server...');
 }, 3000)
 console.log('End of file.');
+
+const delayColorChange = (newColor, delay, next) => {
+    setTimeout(() => {
+        document.body.style.background = newColor;
+        next();
+    }, delay)
+}
+
+delayColorChange('teal', 1000, () => {
+    console.log('CALLBACK');
+});
