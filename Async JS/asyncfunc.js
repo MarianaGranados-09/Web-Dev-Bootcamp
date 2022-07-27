@@ -45,3 +45,29 @@ login('goofy13', 'ilovebread123')
     console.log("ERROR");
     console.log(err);
 })
+
+//Await keyword: allows us to write async code that looks like sync
+
+//We can only use the await keyword inside of functions declared with async
+
+//await will pause the execution of the function, waiting for a promise to be resolved.
+
+async function rainbow() {
+    await delayColor('red', 1000)
+    await delayColor('orange', 1000)
+    await delayColor('yellow', 1000)
+    await delayColor('green', 1000)
+    await delayColor('blue', 1000)
+    await delayColor('indigo', 1000)
+    await delayColor('violet', 1000)
+    return 'ALL DONE!'
+}
+
+rainbow().then(() => console.log("End of rainbow"))
+
+async function printRainbow(){
+    await rainbow();
+    console.log('END');
+}
+    
+printRainbow();
