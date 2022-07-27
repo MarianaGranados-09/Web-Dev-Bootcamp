@@ -81,3 +81,19 @@ requestPromise('yelp.com/api/coffee')
         console.log('PROMISE REJECTED')
         console.log('ERROR');
     })
+const delayColor = (color, delay) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            document.body.style.backgroundColor = color;
+            resolve();
+        }, delay);
+    })
+}
+
+delayColor('red', 1000)
+    .then(() => delayColor('orange', 1000))
+    .then(() => delayColor('yellow', 1000))
+    .then(() => delayColor('red', 1000))
+    .then(() => delayColor('teal', 1000))
+
+
