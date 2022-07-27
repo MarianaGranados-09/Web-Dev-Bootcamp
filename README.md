@@ -29,4 +29,6 @@ Topics covered so far:
      
      *DOM Events (inline events, onclick propery, addEventListener)
      
-     *Input, Forms, and Change Events.
+     *Input, Forms, and Change Events
+     
+     *Async Javascript: Callbacks, Promises, Async and Await keywords
