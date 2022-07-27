@@ -50,3 +50,10 @@ const dog = {
 const Jdog = JSON.stringify(dog);
 console.log(Jdog);
 //logs out: {"breed":"lab","color":"black"}
+
+//Postman/Hoppscotch is a tool we use to make HTTP request to test out different APIs to save
+//requests; make API calls
+
+//HTTP verbs: GET, POST, PUT, DELETE... (Different types of request we can send)
+//GET: receive information - getting stuff from api
+//POST: data is being sent somewhere
