@@ -20,3 +20,25 @@ const getStarwars = async(id) => {
 };
 
 getStarwars(10);
+
+//Setting headers with axios
+const getData = async () => {
+    const headers = { headers: {Accept: 'application/json'}};
+    const res = await axios.get('https://icanhazdadjoke.com/', headers)
+    let joke = res.data.joke;
+    return joke;
+}
+
+// getData();
+
+const text = document.querySelector('.text');
+const button = document.querySelector('button');
+
+button.addEventListener('click', () =>{
+   getData() //ejecuta funcion en su tiempo
+   .then((joke) =>{ //cuando termina la funcion, entonces, si es exitosa,
+    // el valor obtenido pasa a ser el valor de text
+    //pero solo sucede hasta que se cumple la promesa
+       text.innerText=joke;
+    })
+})
