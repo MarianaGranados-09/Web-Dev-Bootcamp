@@ -57,3 +57,8 @@ console.log(Jdog);
 //HTTP verbs: GET, POST, PUT, DELETE... (Different types of request we can send)
 //GET: receive information - getting stuff from api
 //POST: data is being sent somewhere
+
+//HTTP status codes
+//200 - ok, 500 - server error responses, 404 - client error responses
+//301 - redirect
+
