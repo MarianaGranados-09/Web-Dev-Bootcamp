@@ -62,3 +62,27 @@ console.log(Jdog);
 //200 - ok, 500 - server error responses, 404 - client error responses
 //301 - redirect
 
+//Query strings: ?sort=desc&color=blue
+
+//HTTP Headers are pairs of information that go along with the request or with a response
+
+//First request
+//XMLHttpRequest
+//The original way of sending requests via JS. (XHRs)
+//Clunky syntax no longer used.
+
+const req = new XMLHttpRequest();
+
+req.onload = function() {
+    console.log('Loaded');
+    const data = JSON.parse(this.responseText);
+    console.log(data.name, data.gender);
+}
+
+req.onerror = function () {
+    console.log('Error');
+    console.log(this);
+}
+
+req.open('GET','https://swapi.dev/api/people/1' )
+req.send();
