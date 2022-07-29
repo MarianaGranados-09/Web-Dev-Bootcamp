@@ -32,3 +32,5 @@ Topics covered so far:
      *Input, Forms, and Change Events
      
      *Async Javascript: Callbacks, Promises, Async and Await keywords
+     
+     *AJAX and APIs (JSON, Postman, HTTP verbs, XHRs-XMLHttpRequest, Fetch, and Axios)
