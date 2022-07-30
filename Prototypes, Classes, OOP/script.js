@@ -57,3 +57,35 @@ function createPerson(id, age, name){
 let person3 = createPerson(1032, 21, 'John');
 console.log(person3.getId());
 
+//Constructor functions are used to define a custom type and the new operator to create multiple objects from this type
+//A constructor function should be called only with the new operator
+
+//constructor function called Person
+// function Person(firstName, lastName){
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+// }
+
+//To create a new instance of the Person, we use the new operator
+let person = new Person('Mike', 'Doe');
+
+//The new operator does the following:
+//-Creates a new empty object and assigns it to the this variable
+//-Assigns the arguments 'mike' and 'doe' to the firstName and lastName properties of the object
+//-Returns the this value
+
+//Adding methods to js constructor functions
+
+//An object may have many methods that manipulate its data, to add a method to an object created via the constuctor function, 
+//you can use the this keyword:
+
+function Person(firstName, lastName){
+    this.firstName = firstName;
+    this.lastName = lastName;
+
+    this.getFullName = function(){
+        return this.firstName+' '+this.lastName;
+    };
+}
+
+
