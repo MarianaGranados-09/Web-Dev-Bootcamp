@@ -27,3 +27,30 @@ let name = john.getName();
 let age  = john.getAge();
 console.log(name);
 console.log(age);
+
+//Same constructor and one method for each pet
+class Pet{
+    constructor(name, age){
+        this.name = name;
+        this.age = age;
+    }
+    //Methods
+    eat(){
+        return this.name+" is eating";
+    }
+}
+//Extends keyword "includes" the Pet class inside Cat class
+class Cat extends Pet{ 
+    meow(){
+        return 'MEOW';
+    }
+}
+//Instance of cat class
+// const rusty  = new Cat('Rusty', 9);
+// console.log(rusty.eat());
+
+class Dog extends Pet{
+    bark(){
+        return "WOOF";
+    }
+}
