@@ -34,3 +34,5 @@ Topics covered so far:
      *Async Javascript: Callbacks, Promises, Async and Await keywords
      
      *AJAX and APIs (JSON, Postman, HTTP verbs, XHRs-XMLHttpRequest, Fetch, and Axios)
+     
+     *OOP Basics (Prototypes, factory functions, constructors, classes-Extends and Super keywords)
