@@ -41,6 +41,13 @@ class Pet{
 }
 //Extends keyword "includes" the Pet class inside Cat class
 class Cat extends Pet{ 
+    //additional information for cat:
+    constructor(name, age, lives){
+        //instead of duplicating the this.parameter, we use the super keyword
+        //which is going to reference the class that we are extending from
+        super(name, age);
+        this.lives = lives;
+    }
     meow(){
         return 'MEOW';
     }
