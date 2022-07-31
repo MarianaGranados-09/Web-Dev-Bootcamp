@@ -36,3 +36,5 @@ Topics covered so far:
      *AJAX and APIs (JSON, Postman, HTTP verbs, XHRs-XMLHttpRequest, Fetch, and Axios)
      
      *OOP Basics (Prototypes, factory functions, constructors, classes-Extends and Super keywords)
+     
+-BASH (basic terminal commands)
