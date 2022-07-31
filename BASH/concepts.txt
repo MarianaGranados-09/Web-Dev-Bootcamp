@@ -9,3 +9,25 @@ LS stands for list and it lists the current contents of the current directory
 PWD - Print Working Directory: prints the path to the working directory
 
 CD - Change Directory: used to change and move between folders
+
+Relative vs Absolute paths- path to a particular file or resource
+
+Absolute: cd /Users/coltsteele --command I can do from any folder on my machine, not relative to current location
+
+Making directories with mkdir
+
+General commands manual 
+
+Man pages and flags
+typing : man ls is going to give us information about list directory contents
+flags: -r, -o, -p...
+
+Touch to create a file or multiple files from the command line.
+touch index.html
+touch index.html app.css app.js
+
+Removing files and folders
+rm app.css
+rm app.js rm index.html
+
+Remove a directory: rmdir , rm -rf Folder
