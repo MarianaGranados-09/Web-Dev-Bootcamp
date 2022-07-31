@@ -1,0 +1,11 @@
+Terminal: a text-based interface to your computer. Originally a physical object, but now we use sft terminals
+
+shell: the program running on the terminal.
+Bash and Z shell being the most popular shells.
+
+LS and PWD
+LS stands for list and it lists the current contents of the current directory
+
+PWD - Print Working Directory: prints the path to the working directory
+
+CD - Change Directory: used to change and move between folders
