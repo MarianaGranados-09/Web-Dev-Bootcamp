@@ -1,0 +1,8 @@
+What to people build with node?
+
+-Web servers, command line tools
+-Native Apps, Video games
+-Drone software
+
+running a node file from terminal:
+node "name_of_file.js"
