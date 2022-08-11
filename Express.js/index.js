@@ -21,6 +21,13 @@ app.listen(3000, () => {
     console.log('Listening port 3000');
 })
 
+app.get('/r/:subreddit', (req, res) => {
+    //Express adds a property to the request
+    const { subreddit } = req.params;
+    res.send("<h1>Browsing "+subreddit+" subreddit</h1>");
+    
+})
+
 //routing: taking incoming requests and a path that is requested
 //and matching that to some code in some response: 
 // /cats = 'meow'
