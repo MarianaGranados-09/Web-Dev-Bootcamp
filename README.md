@@ -40,3 +40,5 @@ Topics covered so far:
 -BASH (basic terminal commands and concepts)
 
 -NPM (Node Package Manager)
+
+-Express.js: request and response objects, routing, path parameters and Nodemon
