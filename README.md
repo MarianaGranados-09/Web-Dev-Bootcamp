@@ -42,3 +42,5 @@ Topics covered so far:
 -NPM (Node Package Manager)
 
 -Express.js: request and response objects, routing, path parameters and Nodemon
+
+-Dynamic HTML with templating using Embedded Javascript
